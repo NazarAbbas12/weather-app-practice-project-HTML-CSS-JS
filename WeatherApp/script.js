@@ -15,7 +15,9 @@ async function SearchWeather(){
         if(windspeed){
             document.getElementById('windSpeed').innerText = windspeed+" km/h";
             document.getElementById('windIcon').style.display = "inline";
+            document.getElementById('windText').style.display = "inline";
         }
         
     }
 }
+
