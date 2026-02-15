@@ -69,7 +69,12 @@ button {
     font-size: 20px;
     color: white;
 }
-
+.wind span
+{
+    color: gray;
+    font-size: 20px;
+}
 .wind i {
     padding-right: 5px;
 }
+
