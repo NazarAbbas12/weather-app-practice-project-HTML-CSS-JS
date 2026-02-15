@@ -5,10 +5,10 @@ async function SearchWeather(){
     {
         let fetchedWeather = await fetch(`https://api.weatherapi.com/v1/current.json?key=apikey&q=${place}`);
         let res = await fetchedWeather.json();
-        console.log(res);
+     
         document.getElementById('disTemp').innerText = res.current.temp_c;
         document.getElementById('place').value= "";
-        document.getElementById('name').innerText = place;
+         document.getElementById('name').innerText = res.location.name;
 
         let windspeed = res.current.wind_kph;
 
@@ -20,4 +20,5 @@ async function SearchWeather(){
         
     }
 }
+
 
